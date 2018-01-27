@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.helloandroid.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/logo"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/contact_Us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp" />
+
+    <ImageView
+        android:id="@+id/address_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/location_icon"
+        android:layout_below="@id/contact_Us"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="32dp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2465 Latham St \nMountain View, CA 94043"
+        android:layout_below="@id/contact_Us"
+        android:layout_toRightOf="@id/address_logo"
+        android:background="#33b2dfdb"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/phone_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/phone_icon"
+        android:layout_below="@id/address_logo"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="32dp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="650-555-5555"
+        android:background="#33b2dfdb"
+        android:layout_below="@id/address"
+        android:layout_toRightOf="@id/phone_logo"
+        android:layout_marginLeft="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="24dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/www_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/info_icon"
+        android:layout_below="@id/phone_logo"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="32dp" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/URL"
+        android:background="#33b2dfdb"
+        android:autoLink="web"
+        android:layout_below="@id/phone"
+        android:layout_toRightOf="@id/www_logo"
+        android:layout_marginLeft="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="24dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
